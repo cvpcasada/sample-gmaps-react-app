@@ -1,3 +1,43 @@
-h1 {
-  color: blue;
+.search-select-container {
+  margin: 1rem 0;
+
+  position: relative;
+  bottom: 6rem;
+}
+
+.country-list {
+  padding:0 1rem;
+}
+
+.dv-star-rating-star {
+  display: inherit;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.rating-text {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.country-list .table td {
+  vertical-align: middle;
+}
+
+#root > div {
+  display: none;
+}
+
+.geosuggest {
+  width: 95%;
+  font-size: 2rem;
+}
+
+.geosuggest input {
+  outline: none;
+}
+
+.geosuggest-item {
+  font-size: 1.5rem;
 }

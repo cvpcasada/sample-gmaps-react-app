@@ -34,6 +34,7 @@ module.exports = {
       { test: /\.js?$/,
         loader: 'babel',
         include: path.join(__dirname, 'src') },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.scss?$/,
         loader: 'style!css!sass',
         include: path.join(__dirname, 'src', 'styles') },
@@ -43,4 +44,4 @@ module.exports = {
         loader: 'file'}
     ]
   }
-}
+};
