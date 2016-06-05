@@ -14,9 +14,6 @@ if (process.env.NODE_ENV !== 'production') {
     noInfo: true,
     publicPath: config.output.publicPath
   }))
-} else {
-  process.env.PWD = process.cwd();
-  app.use(express.static(path.join(process.env.PWD, 'public')));
 }
 
 app.listen(port);
