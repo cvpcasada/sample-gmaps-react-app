@@ -19,7 +19,7 @@ export default class App extends Component {
       placesNearSearch:[],
 
       mapOptions: {
-        center: {lat: 14.554729, lng: 121.02444519999995},
+        center: {lat: 14.554729, lng: 121.02444519999995}, markers: []
       }
     };
 
@@ -51,8 +51,24 @@ export default class App extends Component {
     };
 
     const mapOptions = {
-      center: {lat, lng}
+      center: {lat, lng},
+      markers: [{
+        position: {lat, lng},
+        defaultAnimation: 3
+      }]
     };
+
+    /*
+     {
+     position: {
+     lat: 25.0112183,
+     lng: 121.52067570000001,
+     },
+     key: `Taiwan`,
+     defaultAnimation: 2,
+     }
+     */
+
     console.log(mapOptions);
     this.setState({suggestedPlace, mapOptions});
 
